@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loan calculator</title>
+    <link rel="stylesheet" href="loan.css">
+</head>
+<body>
+    <div class="calculator">
+        <h2>Simple Loan Calculator</h2>
+        <div class="principal">
+            <label for="amount">Principal Amount(Naira)</label>
+            <input type="number" placeholder="Enter Principal Amount" id="amount">
+        </div>
+        <div class="rates">
+            <label for="rate">Rate(%)</label>
+            <input type="number" placeholder="Enter Rate" id="rate">
+        </div>
+        <div class="time">
+            <label for="years">Year</label>
+            <input type="number" placeholder="Enter Year" id="time">
+        </div>
+        <button onclick="answer()" >Calculate</button>
+        <div class="output"> 
+            <p>Principal Amount: <span id="output_1"></span></p>
+            <p>Total Interest: <span id="output_2"></span></p>
+            <p>Total Value: <span id="output_3"></span></p>
+    </div>
+       
+        
+    </div>
+
+
+
+
+    <script src="loan.js"></script>
+</body>
+</html>
