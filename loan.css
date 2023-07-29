@@ -1,25 +1,106 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-html, body{
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  /* background:rgb(22, 22, 123); */
+  background-color: rgb(252, 148, 148);
+  /* background-color: #ff4c29; */
+  display: flex;
+  /*    height: 90vh;*/
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  background-color: rgb(233 111 111);
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgb(197 87 87);
+  padding: 20px 0;
+}
+
+.principal,
+.rates,
+.time,
+.output {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h2 {
+  color: white;
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+label {
+  color: white;
+  margin: 10px;
+}
+input {
+  width: 250px;
+  height: 30px;
+  padding: 1.5rem;
+  font-size: 1rem;
+  margin: 10px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+button {
+  font-size: 18px;
+  width: 250px;
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: #1fb965;
+  font-weight: 999;
+}
+p {
+  color: white;
+  margin-top: 20px;
+}
+#output_1,
+#output_2,
+#output_3 {
+  /*    border: 1px solid black;*/
+  padding: 1.8px;
+  background-color: white;
+  color: black;
+}
+
+@media (max-width: 500px) {
+  html,
+  body {
     height: 100%;
     width: 100%;
-}
+  }
 
-body{
+  body {
     /* background:rgb(22, 22, 123); */
     background-color: rgb(252, 148, 148);
     /* background-color: #ff4c29; */
     display: flex;
-/*    height: 90vh;*/
+    /*    height: 90vh;*/
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.calculator{
+  }
+  .calculator {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,26 +109,28 @@ body{
     border-radius: 5px;
     box-shadow: 5px 5px 5px rgb(197 87 87);
     padding: 20px 0;
+  }
 
-}
-
-.principal, .rates, .time, .output{
+  .principal,
+  .rates,
+  .time,
+  .output {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
-}
-h2{
+    align-items: center;
+  }
+  h2 {
     color: white;
     margin-top: 20px;
     text-align: center;
     margin-bottom: 20px;
-}
-label{
-    color: white; 
+  }
+  label {
+    color: white;
     margin: 10px;
-}
-input{
+  }
+  input {
     width: 250px;
     height: 30px;
     padding: 1.5rem;
@@ -56,8 +139,8 @@ input{
     outline: none;
     border: none;
     border-radius: 5px;
-}
-button{
+  }
+  button {
     font-size: 18px;
     width: 250px;
     padding: 1rem;
@@ -66,87 +149,17 @@ button{
     color: white;
     background-color: #1fb965;
     font-weight: 999;
-}
-p{
-   color: white; 
-   margin-top: 20px;
-}
-#output_1, #output_2, #output_3{
-/*    border: 1px solid black;*/
+  }
+  p {
+    color: white;
+    margin-top: 20px;
+  }
+  #output_1,
+  #output_2,
+  #output_3 {
+    /*    border: 1px solid black;*/
     padding: 1.8px;
     background-color: white;
     color: black;
-} 
-
-
-@media(max-width:500px){
-    body{
-        /* background:rgb(22, 22, 123); */
-        background-color: rgb(252, 148, 148);
-        /* background-color: #ff4c29; */
-        display: flex;
-        height: 90vh;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .calculator{
-        border: 1px solid black;
-        margin-top: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 250px;
-        height: 400px;
-        background-color: rgb(30, 30, 109);
-        border-radius: 5px;
-        box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.5);
-        padding: 10px 0;
-    }
-    .principal, .rates, .time, .output{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; 
-    }
-    h2{
-        color: white;
-        margin-top: 10px;
-        text-align: center;
-        margin-bottom: 10px;
-        font-size: large;
-    }
-    label{
-        color: white; 
-        margin: 5px;
-        font-size: small;
-    }
-    input{
-        width: 200px;
-        height: 25px;
-        padding: 3px;
-        margin: 5px;
-        outline: none;
-        border: none;
-        border-radius: 5px;
-    }
-    button{
-        font-size: 14px;
-        width: 120px;
-        height: 25px;
-        border-radius: 5px;
-        border: none;
-        color: white;
-        background-color: blueviolet;
-        font-weight: 900;
-    }
-    p{
-       color: white; 
-       margin-top: 15px;
-    }
-    #output_1, #output_2, #output_3{
-        background-color: white;
-        color: black;
-        border-radius: 3px;
-    } 
+  }
 }
